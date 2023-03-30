@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
-import Classsolve from '../ClassSolve/Classsolve';
+import React from "react";
+import Solve from "./Solve";
 
-export class Classques extends Component {
-  render()
-  {
+function Question() {
   const books = [
     { name: "You Are Born to Blossom", year: 2011 },
     { name: "Spirit of India", year: 2013 },
@@ -13,14 +11,13 @@ export class Classques extends Component {
     { name: "Wings of fire", year: 1999 },
     { name: "You are Unique", year: 2012 },
   ];
-  
-  
-    return (
-      <div>
-        <Classsolve bookname={books} />
-      </div>
-    )
-  }
+
+  return (
+    <div>
+      
+      <Solve bookname={books} />
+    </div>
+  );
 }
 
-export default Classques
+export default Question;
