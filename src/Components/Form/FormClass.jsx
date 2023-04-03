@@ -19,6 +19,7 @@ export class FormClass extends Component {
   box={
     margin:"10px"
   }
+
   firstname = (event) => {
     this.setState({
       fname: event.target.value,
@@ -36,6 +37,7 @@ export class FormClass extends Component {
       options: event.target.value,
     });
   };
+
 
   submitfun = (event) => {
     event.preventDefault();
@@ -80,6 +82,14 @@ export class FormClass extends Component {
 
           <button type="submit">submit</button>
         </form>
+        {/* <h3>list</h3>
+      <ol>
+        {.map((item, i) => (
+          <li key={i}>
+            {item.this.firstname} --- {item.this.lastname} -----{item.this.options}
+          </li>
+        ))}
+      </ol> */}
       </div>
     );
   }

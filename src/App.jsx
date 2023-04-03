@@ -8,20 +8,28 @@ import Books from "./Components/props-function/Question";
 import SortingClass from "./Components/state-class/SortingClass";
 import Counter from "./Components/State practise/Counter";
 import Todo from "./Components/Todolist/Todo";
+import FormFunction from "./Components/Form/FormFunction";
+
+
+
 
 function App() {
   return (
     <div className="App">
+      <FormFunction/>
         {/* <Books/> */}
       {/* <Classques/> */}
       {/* <Counter /> 
        <ClassState/>  
       <Sorting/>   */}
       {/* <SortingClass/> */}
-      {/* <FormClass/> */}
-      {/* <Todo/> */}
+       {/* <FormClass/> */}
+   
+      {/* <Todo/>  */}
+      
       {/* <Lifecycle/> */}
       {/* <Functionlifecyle/> */}
+
     </div>
   );
 }
